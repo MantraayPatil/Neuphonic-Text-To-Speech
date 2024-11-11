@@ -1,0 +1,75 @@
+/* Home container styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f6f8;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home-header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Get Started button */
+.get-started-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #45a049;
+}
+
+/* Features section */
+.home-features {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.feature h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+    font-size: 1em;
+}
