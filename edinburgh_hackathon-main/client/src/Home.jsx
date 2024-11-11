@@ -3,33 +3,37 @@ import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
-    // const navigate = useNavigate(); // Declare useNavigate at the top level
+    const navigate = useNavigate();
 
-    // const handleGetStarted = () => {
-    //     navigate('/tasks'); // Use navigate inside your handler function
-    // };
+    const handleGetStarted = () => {
+        navigate('/courses'); // Navigate to courses or any other relevant page
+    };
 
     return (
         <div className="home-container">
             <header className="home-header">
-                <h1>Welcome to Health Manager</h1>
-                <p>Organize your tasks efficiently and boost productivity.</p>
-                <button className="get-started-btn">
+                <h1>Welcome to Online Code Tutor</h1>
+                <p>Master coding with personalized lessons and expert guidance.</p>
+                <button className="get-started-btn" onClick={handleGetStarted}>
                     Get Started
                 </button>
             </header>
             <div className="home-features">
                 <div className="feature">
-                    <h3>Easy Task Management</h3>
-                    <p>Add, edit, and delete tasks effortlessly.</p>
+                    <h3>Personalized Learning</h3>
+                    <p>Customized lessons tailored to your skill level and goals.</p>
                 </div>
                 <div className="feature">
-                    <h3>Stay Organized</h3>
-                    <p>Keep track of all your tasks in one place.</p>
+                    <h3>Expert Tuting by our own LLM.</h3>
+                    <p>Learn from one of the best LLM in town.</p>
                 </div>
                 <div className="feature">
-                    <h3>Boost Productivity</h3>
-                    <p>Focus on what matters and get more done.</p>
+                    <h3>Hands-on Projects</h3>
+                    <p>Build real-world projects to solidify your knowledge using the help of our LLM.</p>
+                </div>
+                <div className="feature">
+                    <h3>Speech and Text Conversions</h3>
+                    <p> Input speech or text to ease the process and get a speech and text reply.</p>
                 </div>
             </div>
         </div>
